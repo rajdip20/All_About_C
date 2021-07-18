@@ -6,14 +6,12 @@
 
 #include<stdio.h>
 #include<math.h>
+#define f(x) (1/sqrt(1-pow(x,2)))
 
-float y(float x){
-    return 1/(sqrt(1 - x * x));
-}
 int main()
 {
     float a, b, h, sum;
-    int i, n, m;
+    int n, i, m;
  
     printf("\nEnter the lower limit: ");
     scanf("%f", &a);
@@ -22,16 +20,20 @@ int main()
     printf("\nEnter the number of sub-intervals: ");
     scanf("%d", &n);
     h = (b - a) / n;
+    m = n / 6;
     sum = 0;
     
     if(n%6==0)
     {
-        sum = sum + ((3 * h / 10) * (y(a) + y(a + 2 * h) +5 * y(a + h) + 6 * y(a + 3 * h) + y(a + 4 * h) + 5 * y(a + 5 * h) + y(a + 6 * h)));
-        a = a + 6 * h;
+        for(i=1;i<=m;i++)
+        {
+            sum = sum + ((3 * h / 10) * (f(a) + f(a + 2 * h) +5 * f(a + h) + 6 * f(a + 3 * h) + f(a + 4 * h) + 5 * f(a + 5 * h) + f(a + 6 * h)));
+            a = a + 6 * h;
+        }
         printf("Value of integral is: %f\n", sum);
     }
     else
     {
         printf("Sorry! Weddle rule is not applicable.");
-    }    
+    }
 }

@@ -2,7 +2,7 @@
     Write a program in c to find the sum of the following series.
         s= 1+ 1/2+ 1/4+ 1/8+ 1/16+...+ 1/2^n
 
-    ~~~~~~ Update Date : 01/07/2021 ~~~~~~
+    ~~~~~~ Update Date : 02/07/2021 ~~~~~~
 */
 
 #include<stdio.h>

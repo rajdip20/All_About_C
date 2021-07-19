@@ -2,7 +2,7 @@
     Write a program in c to find the sum of the following series.
         s= 1!+ 2!+ 3!+ 4!+.....+ n!
 
-    ~~~~~~ Update Date : 01/07/2021 ~~~~~~
+    ~~~~~~ Update Date : 02/07/2021 ~~~~~~
 */
 
 #include<stdio.h>

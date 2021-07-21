@@ -6,7 +6,7 @@
 
 #include<stdio.h>
 #include<math.h>
-#define f(x) ((x * x * x) - x - 1)
+#define f(x) ((x * x * x) - 5 * x - 7)
 int main()
 {
     float a, b, x0;
@@ -29,5 +29,5 @@ int main()
             a = x0;
         }
     } while (fabs(a - b) > e);
-    printf("The root is %f", x0);
+    printf("The root is %.3f", x0);
 }

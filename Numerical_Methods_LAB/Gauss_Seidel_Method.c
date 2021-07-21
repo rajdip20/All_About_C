@@ -1,5 +1,5 @@
 /*
-    Assignments on numerical solution of a system of linear equations using Gauss-Seidel iterations.
+    Assignment on numerical solution of a system of linear equations using Gauss-Seidel iterations.
 
     ~~~~~~ Update Date : 18/07/2021 ~~~~~~
 */

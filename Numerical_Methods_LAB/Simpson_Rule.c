@@ -6,7 +6,7 @@
 
 #include<stdio.h>
 #include<math.h>
-#define f(x) 1 / (pow((1 + x), 2))
+#define f(x) (1 / (pow((1 + x), 2)))
 
 int main()
 {
@@ -34,5 +34,5 @@ int main()
         }
     }
     integration = integration * stepSize / 3;
-    printf("\nRequired value of integration is: %f", integration);
+    printf("\nRequired value of integration is: %.3f", integration);
 }

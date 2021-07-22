@@ -30,6 +30,5 @@ int main()
         x0 = x0 + h;
         y0 = y1;
     }while (x0<x1);
-    printf("solution =");
-    printf("%f", y1);
+    printf("solution = %f",y1);
 }

@@ -25,5 +25,5 @@ int main()
         i = i + h;
     }
     ifx = ifx * h / 2;
-    printf("\nThe integral of the equation using Trapezoidal Rule is %lf\n", ifx);
+    printf("\nThe integral of the equation is %lf\n", ifx);
 }
